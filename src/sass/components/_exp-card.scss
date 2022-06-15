@@ -1,0 +1,36 @@
+@use "../utils" as u;
+.exp-card {
+  font-size: u.rem(14);
+  width: 210px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  &__state {
+    width: fit-content;
+    padding-inline: 0.5em;
+    position: absolute;
+    font-size: u.rem(14);
+    top: 6px;
+    left: 11px;
+    background-color: #ffffff;
+    border-radius: 4px;
+  }
+  &__guide-photo {
+    width: 200px;
+    align-self: center;
+  }
+  .rating {
+    display: flex;
+    color: #918e9b;
+    span {
+      margin-left: 5px;
+      color: #000000;
+    }
+  }
+  .price {
+    span {
+      font-weight: 600;
+    }
+  }
+}

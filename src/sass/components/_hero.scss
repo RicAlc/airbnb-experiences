@@ -1,0 +1,19 @@
+@use "../utils/" as u;
+section {
+  width: 40%;
+  overflow: hidden;
+  max-width: u.rem(800);
+  min-width: u.rem(600);
+  .hero__collage {
+    padding-block: 2rem;
+    width: 100%;
+  }
+  .online-exp__title {
+    font-size: u.rem(50);
+    font-weight: 600;
+  }
+  .online-exp__text {
+    font-size: u.rem(18);
+    width: 75%;
+  }
+}
