@@ -1,9 +1,15 @@
 import starIcon from "../assets/star-icon.svg";
 
 function ExpCard(props) {
+  let badgeText;
+  if (props.openSpots === 0) {
+    badgeText = "SOLD OUT";
+  } else if (props.location === "Online") {
+    badgeText = "ONLINE";
+  }
   return (
     <div className="exp-card">
-      <div className="exp-card__state">SOLD OUT</div>
+      {badgeText && <div className="exp-card__state">{badgeText}</div>}
       <img
         className="exp-card__guide-photo"
         src={`./img/${props.img}`}
@@ -12,7 +18,8 @@ function ExpCard(props) {
       <div className="rating">
         <img className="rating__icon" src={starIcon} alt="Icono" />
         <p>
-          <span>{props.rating}</span> ({props.reviewCount}) - USA
+          <span>{props.stats.rating}</span> ({props.stats.reviewCount}) -{" "}
+          {props.location}
         </p>
       </div>
       {props.title}

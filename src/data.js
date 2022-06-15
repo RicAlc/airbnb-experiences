@@ -24,7 +24,7 @@ export default [
       rating: 5.0,
       reviewCount: 30,
     },
-    location: "Online",
+    location: "Chicago",
     openSpots: 27,
   },
   {
@@ -38,7 +38,7 @@ export default [
       rating: 4.8,
       reviewCount: 2,
     },
-    location: "Norway",
+    location: "Online",
     openSpots: 3,
   },
 ];
